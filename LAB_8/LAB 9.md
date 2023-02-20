@@ -10,6 +10,7 @@
 ![image](https://user-images.githubusercontent.com/71546848/220205113-5e70c862-ae32-421d-90d5-1dd60f6f7bcf.png)
 
 • Validating Node-Port Yaml manifest file.
+
 ![image](https://user-images.githubusercontent.com/71546848/220205147-c8000e02-eeab-4871-8663-35290ab9e12d.png)
 
 • Deploy the Node-port service
