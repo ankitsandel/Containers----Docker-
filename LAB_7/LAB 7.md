@@ -18,6 +18,7 @@ Deploy POD with the help of replica and replication controllers.
 ![image](https://user-images.githubusercontent.com/71546848/220204375-81b1c899-211e-4bf0-a60f-264c2a713adf.png)
 
 • All 3 pods were running
+
 ![image](https://user-images.githubusercontent.com/71546848/220204388-95139d8f-384b-41bf-a893-d7c2276cefa0.png)
 
 • On node 1 login into the container created for the POD.
