@@ -6,51 +6,51 @@ Using Kubectl allows you to create, inspect, update, and delete Kubernetes objec
 # Cluster Management
 
 Display endpoint information about the master and services in the cluster
-kubectl cluster-info
+    kubectl cluster-info
 
 Display the Kubernetes version running on the client and server
-kubectl version
+    kubectl version
 
 Get the configuration of the cluster
-kubectl config view
+    kubectl config view
 
 List the API resources that are available
-kubectl api-resources
+    kubectl api-resources
 
 List the API versions that are available
-kubectl api-versions
+    kubectl api-versions
 
 List everything
-kubectl get all --all-namespaces
+    kubectl get all --all-namespaces
 
 
 # Daemonsets
 Shortcode = ds
 
 List one or more daemonsets
-kubectl get daemonset
+    kubectl get daemonset
 
 Edit and update the definition of one or more daemonset
-kubectl edit daemonset <daemonset_name>
+    kubectl edit daemonset <daemonset_name>
 
 Delete a daemonset
-kubectl delete daemonset <daemonset_name>
+    kubectl delete daemonset <daemonset_name>
 
 Create a new daemonset
-kubectl create daemonset <daemonset_name>
+    kubectl create daemonset <daemonset_name>
 
 Manage the rollout of a daemonset
-kubectl rollout daemonset
+    kubectl rollout daemonset
 
 Display the detailed state of daemonsets within a namespace
-kubectl describe ds <daemonset_name> -n <namespace_name>
+    kubectl describe ds <daemonset_name> -n <namespace_name>
 
 # Deployments
 
 Shortcode = deploy
 
 List one or more deployments
-kubectl get deployment
+    kubectl get deployment
 
 Display the detailed state of one or more deployments
 kubectl describe deployment <deployment_name>
