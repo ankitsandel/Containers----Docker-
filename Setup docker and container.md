@@ -18,7 +18,7 @@ OS Requirements:
     apply if only Hyper-V Containers will be deployed. 
     
 Virtualized Container Hosts: 
-If a Windows container host will be run from a Hyper-V virtual machine, and will also be hosting HyperV Containers, nested virtualization will need to be enabled. Nested virtualization has the following 
+If a Windows container host will be run from a Hyper-V virtual machine, and will also be hosting Hyper-V Containers, nested virtualization will need to be enabled. Nested virtualization has the following 
 requirements: 
 
     • At least 4 GB RAM available for the virtualized Hyper-V host. 
@@ -29,6 +29,7 @@ requirements:
     • The container host VM will also need at least 2 virtual processors. 
     
 Memory Requirements: 
+
 ![image](https://user-images.githubusercontent.com/71546848/220198239-ff1c35f7-4be4-4021-a3db-c150cfed82fb.png)
 
 
