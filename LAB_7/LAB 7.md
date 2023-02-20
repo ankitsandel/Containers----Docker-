@@ -40,4 +40,5 @@ Deploy POD with the help of replica and replication controllers.
 ![image](https://user-images.githubusercontent.com/71546848/220204522-4edb0511-98e5-4553-a65d-8c7a27f4886b.png)
 
 • Replicas was scaled down to 2
+
 ![image](https://user-images.githubusercontent.com/71546848/220204534-cfceba0f-dfa2-49e9-b5da-af692db437e4.png)
