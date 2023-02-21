@@ -78,10 +78,10 @@ Note: We no longer wants 'apt' to maintain the upgrade of these packages rather 
        sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
        sudo chown $(id -u):$(id -g) $HOME/.kube/config
        
-# Alternatively, if you are the root user, you can run: export KUBECONFIG=/etc/kubernetes/admin.conf
+    #Alternatively, if you are the root user, you can run: export KUBECONFIG=/etc/kubernetes/admin.conf
 ---
 
-3. Install a Pod network on the cluster so that Pods can talk to each other
+3.  Install a Pod network on the cluster so that Pods can talk to each other
 
  A. Download & configure Flannel
  
