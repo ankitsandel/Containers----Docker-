@@ -1,13 +1,13 @@
 # Steps to add a Windows Node 
 #Perquisite :
-1. Enable Nested Virtualization and MAC-Spoofing for Windows Node.
-2. Get-VMNetworkAdapter -VMName "<name>" | Set-VMNetworkAdapter -MacAddressSpoofing On
-3. Set-VMProcessor -VMName "<name>" -ExposeVirtualizationExtensions $true
+a. Enable Nested Virtualization and MAC-Spoofing for Windows Node.
+b. Get-VMNetworkAdapter -VMName "<name>" | Set-VMNetworkAdapter -MacAddressSpoofing On
+c. Set-VMProcessor -VMName "<name>" -ExposeVirtualizationExtensions $true
   --
   
 1.  Install Container feature from Server Manager
   
-    Install Container Feature from Add and Remover (Server Manager)
+     Install Container Feature from Add and Remover (Server Manager)
   
 2. Install Docker 
 
