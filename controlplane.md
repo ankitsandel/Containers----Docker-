@@ -75,7 +75,7 @@ Confirm installation by checking the version of kubectl.
         sudo modprobe overlay
         sudo modprobe br_netfilter
 
-# Ensure sysctl params are set
+#Ensure sysctl params are set
 
         sudo tee /etc/sysctl.d/kubernetes.conf<<EOF
         net.bridge.bridge-nf-call-ip6tables = 1
@@ -91,7 +91,7 @@ Confirm installation by checking the version of kubectl.
 
         sudo apt install -y curl gnupg2 software-properties-common apt-transport-https ca-certificates
 
-# Add Docker repo
+#Add Docker repo
 
         curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
         sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
@@ -126,7 +126,7 @@ Now initialize the machine that will run the control plane components which incl
 #Pull container images:
 
         sudo kubeadm config images pull
-# Containerd
+#Containerd
 
         sudo kubeadm config images pull --cri-socket /run/containerd/containerd.sock
         
