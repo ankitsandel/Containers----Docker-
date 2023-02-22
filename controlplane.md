@@ -15,7 +15,7 @@
          nano /etc/fstab
         Comment out "#" /swapfile
      
-# Disable Linux SE (Security Enhanced Linux)
+#Disable Linux SE (Security Enhanced Linux)
  
         setenforce 0
         sed -i 's/enforcing/disabled/g' /etc/selinux/config
