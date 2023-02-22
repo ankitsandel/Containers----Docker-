@@ -4,9 +4,9 @@
 
 a. Enable Nested Virtualization and MAC-Spoofing for Windows Node.
 
-b. Get-VMNetworkAdapter -VMName "<name>" | Set-VMNetworkAdapter -MacAddressSpoofing On
-  
-c. Set-VMProcessor -VMName "<name>" -ExposeVirtualizationExtensions $true
+     Get-VMNetworkAdapter -VMName "<name>" | Set-VMNetworkAdapter -MacAddressSpoofing On
+
+     Set-VMProcessor -VMName "<name>" -ExposeVirtualizationExtensions $true
   
   --
   
