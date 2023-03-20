@@ -19,3 +19,4 @@ data with the same command.
 • I validated the data created inside the container reflecting on containerdata folder and on SMBMount.
 
 ![image](https://user-images.githubusercontent.com/71546848/220203114-bc12ea25-32de-4594-807d-fdd03fc19ba8.png)
+![image](https://user-images.githubusercontent.com/71546848/226448817-1f6213bd-264a-4be3-9250-56f985c5f6be.png)
