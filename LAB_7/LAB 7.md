@@ -42,3 +42,25 @@ Deploy POD with the help of replica and replication controllers.
 • Replicas was scaled down to 2
 
 ![image](https://user-images.githubusercontent.com/71546848/220204534-cfceba0f-dfa2-49e9-b5da-af692db437e4.png)
+
+
+Difference between Replica Set and Replication controller
++--------------------------------------------------+-----------------------------------------------------+
+|                   Replica Set                    |               Replication Controller                |
++--------------------------------------------------+-----------------------------------------------------+
+| Replica Set supports the new set-based selector. | Replication Controller only supports equality-based |
+| This gives more flexibility. for eg:             | selector. for eg:                                   |
+|          environment in (production, qa)         |             environment = production                |
+|  This selects all resources with key equal to    | This selects all resources with key equal to        |
+|  environment and value equal to production or qa | environment and value equal to production           |
++--------------------------------------------------+-----------------------------------------------------+
+2.The second thing is the updating the pods.
+
++-------------------------------------------------------+-----------------------------------------------+
+|                      Replica Set                      |            Replication Controller             |
++-------------------------------------------------------+-----------------------------------------------+
+| rollout command is used for updating the replica set. | rolling-update command is used for updating   |
+| Even though replica set can be used independently,    | the replication controller. This replaces the |
+| it is best used along with deployments which          | specified replication controller with a new   |
+| makes them declarative.                               | replication controller by updating one pod    |
+|                                                       | at a time to use the new PodTemplate.       
