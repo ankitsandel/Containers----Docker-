@@ -61,7 +61,9 @@ Confirm installation by checking the version of kubectl.
 
         kubectl version --client && kubeadm version
 
-# 3.  Install Container runtime -- Docker
+# 3.  Install Container runtime 
+
+# Install Docker 
 
 #Add repo and Install packages
 
@@ -113,7 +115,40 @@ Confirm installation by checking the version of kubectl.
           net.bridge.bridge-nf-call-iptables = 1
           net.ipv4.ip_forward = 1
           EOF
+                                                     
+# Install ContainerD                                                     
 
+#Reload configs
+
+        sudo sysctl --system
+
+#Install required packages
+
+        sudo apt install -y curl gnupg2 software-properties-common apt-transport-https ca-certificates
+
+#Add Docker repo
+
+        curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+        sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+
+#Install containerd
+
+        sudo apt update
+        sudo apt install -y containerd.io
+
+#Configure containerd and start service
+
+        sudo su -
+        mkdir -p /etc/containerd
+        containerd config default>/etc/containerd/config.toml
+
+#restart containerd
+
+        sudo systemctl restart containerd
+        sudo systemctl enable containerd
+        systemctl status containerd
+                                                     
+                                                     
 # 4. Initialize control plane (run on first master node)
 
 Login to the server to be used as master and make sure that the br_netfilter module is loaded:
