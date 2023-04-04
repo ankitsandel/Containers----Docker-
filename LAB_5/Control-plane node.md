@@ -18,8 +18,7 @@
 #Disable Linux SE (Security Enhanced Linux)
  
         setenforce 0
-        sed -i 's/enforcing/disabled/g' /etc/selinux/config
-        srep disabled /etc/selinux/config | grep -v '#'
+       
      
 #The control-plane node is the machine where the control plane components run, including etcd (the cluster database) and the API Server (which the kubectl command line tool communicates with)
 # 1. Enable kernel modules and configure sysctl.
@@ -30,11 +29,14 @@
          sudo modprobe br_netfilter
 
          # Add some settings to sysctl
-         sudo tee /etc/sysctl.d/kubernetes.conf<<EOF
+         Vi /etc/sysctl.d/kubernetes.conf 
+         
+  Add below lines in kubernetes.conf
+  
          net.bridge.bridge-nf-call-ip6tables = 1
          net.bridge.bridge-nf-call-iptables = 1
          net.ipv4.ip_forward = 1
-         EOF
+         
 
          # Reload sysctl
          sudo sysctl --system
@@ -110,11 +112,13 @@ Confirm installation by checking the version of kubectl.
 
 #Set up required sysctl params
                                                      
-          sudo tee /etc/sysctl.d/kubernetes.conf<<EOF
-          net.bridge.bridge-nf-call-ip6tables = 1
-          net.bridge.bridge-nf-call-iptables = 1
-          net.ipv4.ip_forward = 1
-          EOF
+         Vi /etc/sysctl.d/kubernetes.conf 
+         
+Add below lines in kubernetes.conf
+  
+         net.bridge.bridge-nf-call-ip6tables = 1
+         net.bridge.bridge-nf-call-iptables = 1
+         net.ipv4.ip_forward = 1
                                                      
 # Install ContainerD                                                     
 
@@ -176,3 +180,11 @@ Now initialize the machine that will run the control plane components which incl
   
        kubeadm join 10.0.0.17:6443 --token ldyz94.90d888brs5yja280 \
                --discovery-token-ca-cert-hash sha256:4d1317360d450622771db09f038ef6ae438623a590479266012a0b3
+        
+        
+        
+After successfully deploying control plane, node may go into NotReady state.
+You will need to setup Networking on control plane node to fix the issue.
+You can use flannel or calico depending on your choise.
+        
+        
