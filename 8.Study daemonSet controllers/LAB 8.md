@@ -1,26 +1,26 @@
-# LAB 8 -- Study NODE-PORT service
+# LAB 8 --Study daemonSet controllers
 
-• Status before applying NODE-PORT service
-![image](https://user-images.githubusercontent.com/71546848/220205075-7e615827-9ba2-4b17-bfa3-0618a19c0fa4.png)
+Daemon set: 
 
-• Container IP address on node 1
-![image](https://user-images.githubusercontent.com/71546848/220205086-fa36cf18-a667-446a-9da7-beb4aa1e0a34.png)
+    1. A pod copy is present on each worker node. 
+    2. If we have 2 worker nodes and we used daemon set then it will create 2 Pods, 1 each on worker node. 
+    3. If one more node is added then, it will deploy one Pod on Node-3. 
+    4. If Node-3 is decommissioned from k8s cluster then Pod running on that node will be garbage collected.
 
-• Checking Label Details of the Pod
-![image](https://user-images.githubusercontent.com/71546848/220205113-5e70c862-ae32-421d-90d5-1dd60f6f7bcf.png)
+• Check the node, pod status – no pod was running
+![image](https://user-images.githubusercontent.com/71546848/220204754-7af8c289-0aa9-4b02-bec7-6774c2de54d6.png)
 
-• Validating Node-Port Yaml manifest file.
+• Check the manifest yaml file for Daemonset.
+![image](https://user-images.githubusercontent.com/71546848/220204829-01fe9656-19a7-4a24-8ddd-93d2857ff8dc.png)
 
-![image](https://user-images.githubusercontent.com/71546848/220205147-c8000e02-eeab-4871-8663-35290ab9e12d.png)
+• Create the controller for DaemonSet.
 
-• Deploy the Node-port service
-![image](https://user-images.githubusercontent.com/71546848/220205158-8b1f8c7e-ac68-4845-a9ac-bfa9b4a63120.png)
+• All nodes has the copy of pod running on them.
+![image](https://user-images.githubusercontent.com/71546848/220204850-7d1038d2-e071-4dbf-bef3-f79f8e742073.png)
 
-• Check the node IP
-![image](https://user-images.githubusercontent.com/71546848/220205183-9d2ade81-d44a-49aa-ad73-8648ae8f197d.png)
+• Check the daemonset
+![image](https://user-images.githubusercontent.com/71546848/220204913-67d5cc99-7236-4e91-9194-9370e233373a.png)
 
-• Access the Pod from browser
-![image](https://user-images.githubusercontent.com/71546848/220205213-4810f0e6-0ca9-4a8f-8d27-609ddc820d92.png)
-
-• Accessing from another server.
-![image](https://user-images.githubusercontent.com/71546848/220205239-ef7fb1e4-8954-4157-9fe1-caee58f35dc5.png)
+• Turning off one worker node – node 2.
+• Daemonset reduced to 1 and pod running on node 2 was garbage collected.
+![image](https://user-images.githubusercontent.com/71546848/220204925-81228ff2-4798-49d7-b9ce-2f5637613e93.png)
