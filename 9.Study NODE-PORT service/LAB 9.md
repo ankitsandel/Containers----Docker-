@@ -1,4 +1,4 @@
-# LAB 8 -- Study NODE-PORT service
+# LAB 9 -- Study NODE-PORT service
 
 • Status before applying NODE-PORT service
 ![image](https://user-images.githubusercontent.com/71546848/220205075-7e615827-9ba2-4b17-bfa3-0618a19c0fa4.png)
