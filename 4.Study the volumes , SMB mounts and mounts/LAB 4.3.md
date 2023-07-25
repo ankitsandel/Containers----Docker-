@@ -5,7 +5,7 @@
 • Bind that folder with the container by deploying the container using -v switch.
 ![image](https://user-images.githubusercontent.com/71546848/220203319-0eaada4b-ec15-43f8-abf7-1d3d48eef359.png)
 
-• Login into the container by docker exec.
+• Login into the container by docker exec command
 
 • Check the directory and yes bindmount folder was binded with binddata folder inside the 
 container.
