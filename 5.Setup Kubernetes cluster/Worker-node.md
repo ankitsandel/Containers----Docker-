@@ -47,12 +47,12 @@ You can download the latest kubernetes binaries from -- https://www.downloadkube
 5. Set Environment variable for kubectl
  
   
-     $env:Path += ";C:\k"
-     [Environment]::SetEnvironmentVariable("Path", $env:Path + ";C:\k", 
-     [EnvironmentVariableTarget]::Machine)
-     $env:KUBECONFIG="C:\k\config"
-     [Environment]::SetEnvironmentVariable("KUBECONFIG", "C:\k\config", 
-     [EnvironmentVariableTarget]::User)
+          $env:Path += ";C:\k"
+          [Environment]::SetEnvironmentVariable("Path", $env:Path + ";C:\k", 
+          [EnvironmentVariableTarget]::Machine)
+          $env:KUBECONFIG="C:\k\config"
+          [Environment]::SetEnvironmentVariable("KUBECONFIG", "C:\k\config", 
+          [EnvironmentVariableTarget]::User)
 
    #Check kubctl configuration:
  
