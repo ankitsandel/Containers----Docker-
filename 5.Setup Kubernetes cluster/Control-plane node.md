@@ -1,7 +1,16 @@
 # Steps to create a Linux Master
 
-#Prerequisites:
-#Preparation:
+# Environment Details
+
+        Hyper-v Host
+        On top of Hyper-V host create 3 VM's
+        1st VM will be a Linux Control plane VM
+        2nd and 3rd VM will be Windows Worker nodes
+
+
+# Prerequisites:
+
+**Preparation:**
 
 #Update the node
 
