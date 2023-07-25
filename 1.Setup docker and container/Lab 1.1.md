@@ -45,3 +45,12 @@ Memory Requirements:
 
 ![image](https://user-images.githubusercontent.com/71546848/220197986-821d00bc-1f4a-4430-b94d-4e32336a3702.png)
 
+# Installation of Docker on windows server 2016/2019 
+
+        Note : 
+        Installation steps are for LAB work only, do not share with customer as they will need to buy licensed version of MCR from Mirantis.
+
+a)	Invoke-WebRequest -Uri https://get.mirantis.com/install.ps1 -o install.ps1
+b)	Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Force -Scope Process;
+c)	.\install.ps1
+
