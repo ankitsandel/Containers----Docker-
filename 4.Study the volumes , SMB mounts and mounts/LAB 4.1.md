@@ -1,6 +1,6 @@
 # LAB 4.1 Create a volume and attach to a container
 
-• Create the volume and mount on the container 
+• Create the volume and mount on the container with the help of **Docker Network create** command.
 
 • Create the new volume Namedvol and check configurations
 ![image](https://user-images.githubusercontent.com/71546848/220202640-0780694b-412a-4c0f-a1a1-eee927559425.png)
