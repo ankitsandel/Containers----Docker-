@@ -14,7 +14,7 @@ Containers attached to the 2nd NAT network will failed to start with error messa
 
 Solution: Disconnect the Container from 2nd NAT Network 
 
-docker network disconnect <2nd NAT_Network-Name> <Container-Name>
+    docker network disconnect <2nd NAT_Network-Name> <Container-Name>
 
   ![image](https://user-images.githubusercontent.com/71546848/220201074-6a58ef79-a10c-4f2e-80ed-ce58b28f84e3.png)
 
