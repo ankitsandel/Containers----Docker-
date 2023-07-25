@@ -1,11 +1,14 @@
 # LAB3 -- Study the transparent and NAT driver.
 
 LAB 3.1 Deploy a transparent network to a container
+
 Containers attached to a network created with the 'transparent' driver will be directly connected to 
 the physical network through an external Hyper-V switch. 
+
 IPs from the physical network can be assigned statically or dynamically using an external DHCP server. 
 When this mode is used in a virtualization scenario (container host is a VM) MAC address spoofing is 
 required.
+
 • Create the network driver for transparent network.
 ![image](https://user-images.githubusercontent.com/71546848/220200464-ff8a4aba-9376-49a0-bdfe-7888e2fac9ab.png)
 
