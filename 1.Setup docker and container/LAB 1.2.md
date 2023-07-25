@@ -34,11 +34,14 @@ ps stands for “Process Status”
 ![image](https://user-images.githubusercontent.com/71546848/220198564-f08c0041-d063-49af-84f1-47d9d1d54ac9.png)
 
 • Run hostname, ipconfig /all inside the container to confirm if you are inside the container. 
+
 • Run hostname, ipconfig /all on the host and compare.
+
 • Run Exit command to get out off container
+
 • Inspect a container: **docker container inspect <container_name> / docker inspect <container_name>**
 
-PS C:\Users\Ankit> docker inspect 0bbb49135bb1
+    PS C:\Users\Ankit> docker inspect 0bbb49135bb1
         
 
 • Got to any web browser and enter: IP address of container -- <Ip address of container>: <Container Port>
