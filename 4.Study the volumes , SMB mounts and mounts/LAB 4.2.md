@@ -16,6 +16,7 @@
 "SMBmount" directory. Any data stored on globally mapped remote share will be available to 
 applications inside the container. Multiple containers can get read/write access to this shared 
 data with the same command.
+
 • I validated the data created inside the container reflecting on containerdata folder and on SMBMount.
 
 ![image](https://user-images.githubusercontent.com/71546848/220203114-bc12ea25-32de-4594-807d-fdd03fc19ba8.png)
