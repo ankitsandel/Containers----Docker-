@@ -1,5 +1,6 @@
 # LAB 3.3 Study the difference between NAT and transparent network.
-NAT network: 
+**NAT network:** 
+
 1. When we install Docker, it creates a Hyper-V switch on the local host with scope:local
 ![image](https://user-images.githubusercontent.com/71546848/220201050-e79310d1-770a-402c-be6f-8a5e1d1f1b87.png)
 
@@ -15,7 +16,7 @@ Solution: Disconnect the Container from 2nd NAT Network
 docker network disconnect <2nd NAT_Network-Name> <Container-Name>
   ![image](https://user-images.githubusercontent.com/71546848/220201074-6a58ef79-a10c-4f2e-80ed-ce58b28f84e3.png)
 
-Transparent network: 
+**Transparent network: **
   
 Containers attached to a network created with the 'transparent' driver will be directly connected to 
 the physical network through an external Hyper-V switch.
