@@ -1,6 +1,5 @@
-# LAB3 -- Study the transparent and NAT driver.
+# LAB 3.1 Deploy a transparent network to a container
 
-LAB 3.1 Deploy a transparent network to a container
 
 Containers attached to a network created with the 'transparent' driver will be directly connected to 
 the physical network through an external Hyper-V switch. 
