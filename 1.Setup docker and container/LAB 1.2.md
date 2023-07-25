@@ -1,4 +1,4 @@
-# LAB 1.2 Pull any image from dockers hub and deploy it.
+# LAB 1.2 Pull any image from docker hub and deploy it.
 
 Pull Docker image using Docker pull command.
 ![image](https://user-images.githubusercontent.com/71546848/220198499-04ee766e-158a-4e32-a254-5532c777264f.png)
