@@ -10,10 +10,11 @@ Hyper-V switch
 4. 2nd Nat network is not supported in Windows Server 2016, but we can create 2nd NAT network in 
 Windows Server 2019. 
 5. After the Container Host is Rebooted, 2nd NAT network is deleted. 
-Containers attached to the 2nd NAT network will failed to start with error messages, 
-Solution: Disconnect the Container from 2nd NAT Network 
+Containers attached to the 2nd NAT network will failed to start with error messages,
 
+Solution: Disconnect the Container from 2nd NAT Network 
 docker network disconnect <2nd NAT_Network-Name> <Container-Name>
+
   ![image](https://user-images.githubusercontent.com/71546848/220201074-6a58ef79-a10c-4f2e-80ed-ce58b28f84e3.png)
 
 **Transparent network:**
