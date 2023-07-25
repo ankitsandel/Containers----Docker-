@@ -1,6 +1,6 @@
 # LAB 2.1 Deploy the container with process isolation
 
-• Deployed the container with process isolation using Docker run command
+• Deploy the container with process isolation using Docker run command
 ![image](https://user-images.githubusercontent.com/71546848/220199472-5d82bad0-2316-4e92-a987-a6bf21e11554.png)
 
 • Check the isolation type of the deployed container.
