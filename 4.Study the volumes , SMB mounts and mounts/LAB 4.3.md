@@ -1,6 +1,6 @@
 # LAB 4.3 Create a local mount and attach to a container.
 
-• Create one folder on container Host names bindmount
+• Create one folder on container Host with name bindmount
 
 • Bind that folder with the container by deploying the container using -v switch.
 ![image](https://user-images.githubusercontent.com/71546848/220203319-0eaada4b-ec15-43f8-abf7-1d3d48eef359.png)
